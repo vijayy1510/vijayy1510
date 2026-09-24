@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#252b35" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowA" cx="85%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#f5b544" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f5b544" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#7ee0c3" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7ee0c3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fade" cx="30%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0d0f12" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8eaed"/>
+      <stop offset="55%" stop-color="#e8eaed"/>
+      <stop offset="100%" stop-color="#f5b544"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="1200" height="400" rx="20"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Cascadia Code', Consolas, 'SF Mono', Menlo, monospace; }
+    .sans { font-family: 'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+    .in   { opacity: 0; animation: rise .8s ease-out forwards; }
+    .role { opacity: 0; font-size: 26px; fill: #e8eaed; font-family: 'JetBrains Mono', 'Cascadia Code', Consolas, Menlo, monospace;
+            animation: cycle 12s ease-in-out infinite; }
+    .mint { fill: #7ee0c3; }
+    .sq   { opacity: 0; animation: pop .5s ease-out forwards; }
+    .twinkle { animation: pop .5s ease-out forwards, twinkle 3s ease-in-out infinite; }
+    .dot  { animation: pulse 2s ease-out infinite; transform-origin: 88px 318px; }
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes rise   { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    @keyframes cycle  { 0% { opacity: 0; } 4% { opacity: 1; } 21% { opacity: 1; } 25%, 100% { opacity: 0; } }
+    @keyframes pop    { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes twinkle { 0%, 100% { fill-opacity: 1; } 50% { fill-opacity: .35; } }
+    @keyframes pulse  { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(2.6); opacity: 0; } }
+    @keyframes blink  { 50% { opacity: 0; } }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="400" fill="#0d0f12"/>
+    <rect width="1200" height="400" fill="url(#grid)" opacity=".55"/>
+    <rect width="1200" height="400" fill="url(#fade)"/>
+    <rect width="1200" height="400" fill="url(#glowA)"/>
+    <rect width="1200" height="400" fill="url(#glowB)"/>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="399" rx="20" fill="none" stroke="#252b35"/>
+
+  <text class="mono in" x="64" y="88" font-size="17" fill="#8a93a3">
+    <tspan fill="#7ee0c3">vijay@lpu</tspan>:<tspan fill="#f5b544">~$</tspan> ./hello_world<tspan class="caret" fill="#f5b544"> _</tspan>
+  </text>
+
+  <text class="sans in" x="60" y="180" font-size="74" font-weight="700" letter-spacing="-2" fill="url(#nameGrad)" style="animation-delay:.25s">Lanjipalli Vijay</text>
+
+  <text class="role" x="64" y="252" style="animation-delay:0s"><tspan class="mint">&gt;</tspan> Engineering Student @ LPU</text>
+  <text class="role" x="64" y="252" style="animation-delay:3s"><tspan class="mint">&gt;</tspan> C++ &amp; Python Problem Solver</text>
+  <text class="role" x="64" y="252" style="animation-delay:6s"><tspan class="mint">&gt;</tspan> Aspiring Web Developer</text>
+  <text class="role" x="64" y="252" style="animation-delay:9s"><tspan class="mint">&gt;</tspan> Learning in public, one commit at a time</text>
+
+  <g class="in" style="animation-delay:.6s">
+    <rect x="64" y="298" width="262" height="40" rx="20" fill="#14181e" stroke="#252b35"/>
+    <circle class="dot" cx="88" cy="318" r="5" fill="#7ee0c3"/>
+    <circle cx="88" cy="318" r="5" fill="#7ee0c3"/>
+    <text class="mono" x="104" y="323" font-size="14" fill="#8a93a3">open to internships</text>
+  </g>
+  <text class="mono in" x="346" y="323" font-size="14" fill="#8a93a3" style="animation-delay:.75s">
+    <tspan fill="#f5b544">→</tspan> vijayy1510.github.io
+  </text>
+
+  <g>
+    <rect class="sq" x="856" y="100" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.16s"/>
+    <rect class="sq twinkle" x="856" y="132" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:0.04s, 4.95s"/>
+    <rect class="sq" x="856" y="164" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:0.38s"/>
+    <rect class="sq" x="856" y="196" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.02s"/>
+    <rect class="sq" x="856" y="228" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:1.12s"/>
+    <rect class="sq" x="856" y="260" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.15s"/>
+    <rect class="sq twinkle" x="856" y="292" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:0.50s, 5.19s"/>
+    <rect class="sq" x="888" y="100" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:0.54s"/>
+    <rect class="sq twinkle" x="888" y="132" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:0.52s, 3.87s"/>
+    <rect class="sq twinkle" x="888" y="164" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:0.96s, 4.27s"/>
+    <rect class="sq" x="888" y="196" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:1.10s"/>
+    <rect class="sq" x="888" y="228" width="24" height="24" rx="5" fill="#b8862f" style="animation-delay:0.67s"/>
+    <rect class="sq" x="888" y="260" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:0.77s"/>
+    <rect class="sq" x="888" y="292" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.27s"/>
+    <rect class="sq" x="920" y="100" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.08s"/>
+    <rect class="sq twinkle" x="920" y="132" width="24" height="24" rx="5" fill="#b8862f" style="animation-delay:1.41s, 2.50s"/>
+    <rect class="sq" x="920" y="164" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:0.43s"/>
+    <rect class="sq" x="920" y="196" width="24" height="24" rx="5" fill="#b8862f" style="animation-delay:0.74s"/>
+    <rect class="sq twinkle" x="920" y="228" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:0.37s, 3.21s"/>
+    <rect class="sq" x="920" y="260" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:0.42s"/>
+    <rect class="sq" x="920" y="292" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:0.58s"/>
+    <rect class="sq twinkle" x="952" y="100" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:0.58s, 4.33s"/>
+    <rect class="sq" x="952" y="132" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.36s"/>
+    <rect class="sq" x="952" y="164" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.21s"/>
+    <rect class="sq" x="952" y="196" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:0.78s"/>
+    <rect class="sq" x="952" y="228" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.39s"/>
+    <rect class="sq" x="952" y="260" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:0.56s"/>
+    <rect class="sq twinkle" x="952" y="292" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:0.85s, 5.78s"/>
+    <rect class="sq" x="984" y="100" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.36s"/>
+    <rect class="sq twinkle" x="984" y="132" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:0.99s, 2.61s"/>
+    <rect class="sq twinkle" x="984" y="164" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.45s, 5.33s"/>
+    <rect class="sq" x="984" y="196" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.45s"/>
+    <rect class="sq" x="984" y="228" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:0.80s"/>
+    <rect class="sq twinkle" x="984" y="260" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:1.67s, 2.59s"/>
+    <rect class="sq" x="984" y="292" width="24" height="24" rx="5" fill="#b8862f" style="animation-delay:1.51s"/>
+    <rect class="sq twinkle" x="1016" y="100" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.66s, 2.79s"/>
+    <rect class="sq" x="1016" y="132" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.70s"/>
+    <rect class="sq" x="1016" y="164" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.94s"/>
+    <rect class="sq" x="1016" y="196" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:0.91s"/>
+    <rect class="sq twinkle" x="1016" y="228" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:1.01s, 2.73s"/>
+    <rect class="sq twinkle" x="1016" y="260" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.69s, 2.06s"/>
+    <rect class="sq" x="1016" y="292" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.84s"/>
+    <rect class="sq twinkle" x="1048" y="100" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:2.26s, 2.74s"/>
+    <rect class="sq" x="1048" y="132" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:2.16s"/>
+    <rect class="sq twinkle" x="1048" y="164" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:1.70s, 5.96s"/>
+    <rect class="sq twinkle" x="1048" y="196" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.55s, 3.44s"/>
+    <rect class="sq" x="1048" y="228" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.28s"/>
+    <rect class="sq twinkle" x="1048" y="260" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:2.04s, 2.73s"/>
+    <rect class="sq" x="1048" y="292" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:1.63s"/>
+    <rect class="sq" x="1080" y="100" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.37s"/>
+    <rect class="sq" x="1080" y="132" width="24" height="24" rx="5" fill="#f5b544" style="animation-delay:2.35s"/>
+    <rect class="sq twinkle" x="1080" y="164" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.58s, 2.78s"/>
+    <rect class="sq" x="1080" y="196" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.40s"/>
+    <rect class="sq twinkle" x="1080" y="228" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:1.48s, 5.75s"/>
+    <rect class="sq twinkle" x="1080" y="260" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:2.17s, 2.28s"/>
+    <rect class="sq" x="1080" y="292" width="24" height="24" rx="5" fill="#f5b544" style="animation-delay:1.31s"/>
+    <rect class="sq twinkle" x="1112" y="100" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:2.57s, 4.76s"/>
+    <rect class="sq twinkle" x="1112" y="132" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:2.35s, 5.83s"/>
+    <rect class="sq" x="1112" y="164" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:2.22s"/>
+    <rect class="sq" x="1112" y="196" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:1.86s"/>
+    <rect class="sq" x="1112" y="228" width="24" height="24" rx="5" fill="#3b2f17" style="animation-delay:2.22s"/>
+    <rect class="sq" x="1112" y="260" width="24" height="24" rx="5" fill="#1a1f27" style="animation-delay:1.59s"/>
+    <rect class="sq twinkle" x="1112" y="292" width="24" height="24" rx="5" fill="#6e5220" style="animation-delay:2.06s, 5.57s"/>
+    
+  </g>
+  <text class="mono in" x="856" y="346" font-size="13" fill="#8a93a3" style="animation-delay:1.4s">// every square is a step forward</text>
+</svg>

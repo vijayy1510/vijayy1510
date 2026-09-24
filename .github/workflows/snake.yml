@@ -14,12 +14,13 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake (Black Panther palette)
+      - name: Generate snake (amber & mint palette)
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake.svg?color_snake=#9D4EDD&color_dots=#161616,#3C096C,#5A189A,#7B2CBF,#E0AAFF
+            dist/snake-dark.svg?color_snake=#7ee0c3&color_dots=#161b22,#3b2f17,#6e5220,#b8862f,#f5b544
+            dist/snake-light.svg?color_snake=#0d9373&color_dots=#ebedf0,#fbe3b0,#f5c56a,#e0a032,#b8761a
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
