@@ -22,26 +22,9 @@
 
 ## <img src="https://img.shields.io/badge/-%F0%9F%96%A4-0D0D0D?style=flat" height="22"/> About Me
 
-```python
-class Vijay:
-    def __init__(self):
-        self.name       = "Lanjipalli Vijay"
-        self.role       = "Tech Student"
-        self.university = "Lovely Professional University"
-        self.location   = "Andhra Pradesh, India"
-        self.languages  = ["Python", "C", "C++", "JavaScript"]
-        self.web        = ["HTML", "CSS", "JavaScript"]
-        self.databases  = ["DBMS", "SQL"]
-        self.motto      = "Turning ideas into impact 💜"
-
-    def say_hi(self):
-        print("Thanks for dropping by! Let's build something great together.")
-```
-
-- 🎓 Pursuing my degree at **Lovely Professional University**
-- 🌱 Constantly sharpening my skills in **programming, data structures & web development**
-- 🤝 Open to collaborating on **student projects, open source & hackathons**
-- 📫 Reach me at **vijayy1510@gmail.com**
+<p align="center">
+  <img src="./assets/about.svg" width="100%" alt="whoami — Lanjipalli Vijay, Tech Student at Lovely Professional University, Andhra Pradesh, India. Turning ideas into impact." />
+</p>
 
 ---
 

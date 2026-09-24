@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="500" viewBox="0 0 860 500" xml:space="preserve">
+  <defs>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9D4EDD"/>
+      <stop offset="50%" stop-color="#3C096C"/>
+      <stop offset="100%" stop-color="#7B2CBF"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1A0B2E"/>
+      <stop offset="100%" stop-color="#0D0D0D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="90%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#7B2CBF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="5%" cy="0%" r="50%">
+      <stop offset="0%" stop-color="#9D4EDD" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect x="4" y="4" width="852" height="492" rx="16"/></clipPath>
+  </defs>
+
+  <style>
+    text { font-family: 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace; font-size: 16px; }
+    .user { fill: #9D4EDD; font-weight: 700; }
+    .path { fill: #E0AAFF; }
+    .cmd  { fill: #F5F5F5; }
+    .out  { fill: #B794D6; }
+    .hl   { fill: #E0AAFF; font-weight: 700; }
+    .dim  { fill: #6B5A7E; }
+    .title { fill: #B794D6; font-size: 13px; letter-spacing: 1px; }
+    .line { opacity: 0; animation: show 0.35s ease-out forwards; }
+    .cursor { fill: #9D4EDD; animation: blink 1s step-end infinite; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes show  { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes pulse { 0%,100% { stroke-opacity: 0.55; } 50% { stroke-opacity: 1; } }
+  </style>
+
+  <!-- card -->
+  <rect x="4" y="4" width="852" height="492" rx="16" fill="#0D0D0D"/>
+  <g clip-path="url(#card)">
+    <rect width="860" height="500" fill="url(#glow)"/>
+    <rect width="860" height="500" fill="url(#glow2)"/>
+    <rect x="4" y="4" width="852" height="42" fill="url(#bar)"/>
+    <line x1="4" y1="46" x2="856" y2="46" stroke="#3C096C" stroke-width="1"/>
+  </g>
+  <rect class="pulse" x="4" y="4" width="852" height="492" rx="16" fill="none" stroke="url(#border)" stroke-width="2.5"/>
+
+  <!-- title bar -->
+  <circle cx="30" cy="25" r="6.5" fill="#E0AAFF"/>
+  <circle cx="52" cy="25" r="6.5" fill="#9D4EDD"/>
+  <circle cx="74" cy="25" r="6.5" fill="#5A189A"/>
+  <text x="430" y="30" text-anchor="middle" class="title">vijay@lpu — ~/about-me — zsh</text>
+
+  <!-- 1 -->
+  <g class="line" style="animation-delay:0.3s">
+    <text x="28" y="84"><tspan class="user">vijay@lpu</tspan><tspan class="path">:~$ </tspan><tspan class="cmd">whoami</tspan></text>
+  </g>
+  <g class="line" style="animation-delay:0.7s">
+    <text x="28" y="110"><tspan class="dim">➜ </tspan><tspan class="hl">Lanjipalli Vijay</tspan><tspan class="out"> — Tech Student @ Lovely Professional University</tspan></text>
+  </g>
+
+  <!-- 2 -->
+  <g class="line" style="animation-delay:1.3s">
+    <text x="28" y="148"><tspan class="user">vijay@lpu</tspan><tspan class="path">:~$ </tspan><tspan class="cmd">cat origin.txt</tspan></text>
+  </g>
+  <g class="line" style="animation-delay:1.7s">
+    <text x="28" y="174"><tspan class="dim">➜ </tspan><tspan class="out">Rooted in </tspan><tspan class="hl">Andhra Pradesh, India</tspan><tspan class="out"> · coding my way forward</tspan></text>
+  </g>
+
+  <!-- 3 -->
+  <g class="line" style="animation-delay:2.3s">
+    <text x="28" y="212"><tspan class="user">vijay@lpu</tspan><tspan class="path">:~$ </tspan><tspan class="cmd">ls ./arsenal</tspan></text>
+  </g>
+  <g class="line" style="animation-delay:2.7s">
+    <text x="28" y="238"><tspan class="dim">➜ </tspan><tspan class="hl">python/&#160; c/&#160; c++/&#160; javascript/&#160; html/&#160; css/&#160; dbms/</tspan></text>
+  </g>
+
+  <!-- 4 -->
+  <g class="line" style="animation-delay:3.3s">
+    <text x="28" y="276"><tspan class="user">vijay@lpu</tspan><tspan class="path">:~$ </tspan><tspan class="cmd">cat mission.txt</tspan></text>
+  </g>
+  <g class="line" style="animation-delay:3.7s">
+    <text x="28" y="302"><tspan class="dim">➜ </tspan><tspan class="out">Turning ideas into </tspan><tspan class="hl">impact</tspan><tspan class="out"> — one clean line of code at a time.</tspan></text>
+  </g>
+
+  <!-- 5 -->
+  <g class="line" style="animation-delay:4.3s">
+    <text x="28" y="340"><tspan class="user">vijay@lpu</tspan><tspan class="path">:~$ </tspan><tspan class="cmd">./status --now</tspan></text>
+  </g>
+  <g class="line" style="animation-delay:4.7s">
+    <text x="28" y="366"><tspan class="dim">➜ </tspan><tspan class="hl">●</tspan><tspan class="out"> Learning DSA&#160;&#160;&#160;</tspan><tspan class="hl">●</tspan><tspan class="out"> Building for the web&#160;&#160;&#160;</tspan><tspan class="hl">●</tspan><tspan class="out"> Open to collab</tspan></text>
+  </g>
+
+  <!-- 6 -->
+  <g class="line" style="animation-delay:5.1s">
+    <text x="28" y="404"><tspan class="user">vijay@lpu</tspan><tspan class="path">:~$ </tspan><tspan class="cmd">ping vijay</tspan></text>
+  </g>
+  <g class="line" style="animation-delay:5.4s">
+    <text x="28" y="430"><tspan class="dim">➜ </tspan><tspan class="out">Reply from </tspan><tspan class="hl">vijayy1510@gmail.com</tspan><tspan class="out"> · always happy to connect</tspan></text>
+  </g>
+
+  <!-- prompt + cursor -->
+  <g class="line" style="animation-delay:5.6s">
+    <text x="28" y="468"><tspan class="user">vijay@lpu</tspan><tspan class="path">:~$ </tspan><tspan class="cursor">▌</tspan></text>
+  </g>
+</svg>
