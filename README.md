@@ -4,13 +4,13 @@
      Lavender Glow #E0AAFF -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,50:3C096C,100:7B2CBF&height=220&section=header&text=Lanjipalli%20Vijay&fontSize=58&fontColor=E0AAFF&fontAlignY=38&desc=Tech%20Student%20%E2%80%A2%20Lovely%20Professional%20University&descSize=18&descAlignY=58&descAlign=50&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D0D0D,50:3C096C,100:7B2CBF&height=140&section=header" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/vijayy1510">
-    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=24&duration=3000&pause=800&color=9D4EDD&center=true&vCenter=true&width=600&lines=Hey+there%2C+I'm+Vijay+%F0%9F%91%8B;Tech+Student+%40+LPU;Python+%E2%80%A2+C+%E2%80%A2+C%2B%2B+%E2%80%A2+Web+Dev;Wakanda+Forever+%F0%9F%92%9C" alt="Typing SVG" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Cinzel&weight=700&size=46&duration=1&repeat=false&color=E0AAFF&center=true&vCenter=true&width=700&height=70&lines=Lanjipalli+Vijay" alt="Lanjipalli Vijay" />
+  <br/>
+  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=600&size=28&duration=1&repeat=false&color=9D4EDD&center=true&vCenter=true&width=700&height=45&lines=Turning+Ideas+Into+Impact" alt="Turning Ideas Into Impact" />
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@ class Vijay:
         self.languages  = ["Python", "C", "C++", "JavaScript"]
         self.web        = ["HTML", "CSS", "JavaScript"]
         self.databases  = ["DBMS", "SQL"]
-        self.motto      = "Build. Learn. Grow. — Wakanda Forever 💜"
+        self.motto      = "Turning ideas into impact 💜"
 
     def say_hi(self):
         print("Thanks for dropping by! Let's build something great together.")
@@ -101,5 +101,5 @@ class Vijay:
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7B2CBF,50:3C096C,100:0D0D0D&height=120&section=footer&text=Wakanda%20Forever%20%F0%9F%92%9C&fontSize=22&fontColor=E0AAFF&fontAlignY=70" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7B2CBF,50:3C096C,100:0D0D0D&height=120&section=footer&" width="100%" />
 </p>
