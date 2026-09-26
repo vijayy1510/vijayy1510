@@ -14,13 +14,13 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake (amber & mint palette)
+      - name: Generate snake (MORPH red & yellow palette)
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-dark.svg?color_snake=#7ee0c3&color_dots=#161b22,#3b2f17,#6e5220,#b8862f,#f5b544
-            dist/snake-light.svg?color_snake=#0d9373&color_dots=#ebedf0,#fbe3b0,#f5c56a,#e0a032,#b8761a
+            dist/snake-dark.svg?color_snake=#ffd23f&color_dots=#161b22,#4a0d14,#8a111b,#c81d28,#ff4b55
+            dist/snake-light.svg?color_snake=#0b0b0f&color_dots=#ebedf0,#ffc9cd,#ff7f88,#e8222e,#a3121c
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
